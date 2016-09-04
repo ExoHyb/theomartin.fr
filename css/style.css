@@ -1,6 +1,20 @@
 body {
   font-family: 'Dosis', sans-serif;
-  background-image: url("/img/background.png");
+  background: url(../img/background.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  letter-spacing: 2px;
+}
+
+.container {
+  width: 80%;
+  background-color: #fff;
+}
+
+.container-width {
+  width: 80%;
+  margin: auto;
 }
 
 h1 {
@@ -8,6 +22,7 @@ h1 {
   text-transform: uppercase;
   font-size: 4.5em;
   color: #4E4E4E;
+  margin-top: 1.5em;
 }
 
 h2 {
@@ -19,6 +34,25 @@ h3 {
   font-family: 'Dosis', sans-serif;
   color: #4E4E4E;
   font-weight: bold;
+}
+
+nav {
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  margin: 0 1em;
+}
+nav a {
+  letter-spacing: 3px;
+}
+nav a:hover {
+  text-decoration: none;
+}
+
+#info {
+  letter-spacing: 3px;
+  font-style: italic;
 }
 
 .police-pack {
@@ -58,8 +92,9 @@ h3 {
 }
 
 .contain-description {
-  width: 50%;
+  width: 70%;
   margin: auto;
+  margin-top: 3.5em;
 }
 
 .style-form {
@@ -73,9 +108,23 @@ label {
 }
 
 .img-portfolio {
-  width: 300px;
-  height: 200px;
   margin: auto;
+}
+
+#codincamp a {
+  color: #71B43D;
+}
+#codincamp a:hover {
+  text-decoration: none;
+  color: #3F7C10;
+}
+
+#simplonco a {
+  color: #D7254E;
+}
+#simplonco a:hover {
+  text-decoration: none;
+  color: #D7254E;
 }
 
 /*# sourceMappingURL=style.css.map */
