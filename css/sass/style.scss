@@ -54,6 +54,15 @@ nav {
 	font-style: italic;
 }
 
+#lien-1 {
+	color: #7CA4AC;
+}
+
+#lien-1:hover {
+	text-decoration: none;
+	color: #6E8286;
+}
+
 .police-pack {
 	font-family: 'Dosis', sans-serif;
 	color: #252525;
@@ -80,6 +89,7 @@ nav {
 .div-pack {
 	border: 1px solid #D6D6D6;
 	border-radius: 3px;
+	height: 30em;
 }
 
 .desc-pack {
@@ -132,4 +142,30 @@ label {
 		text-decoration: none;
 		color: #D7254E;
 	}
+}
+
+#tarif {
+	text-align: center;
+	letter-spacing: 3px;
+	font-style: italic;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+#esp {
+	text-align: right;
+	a {
+		color: red;
+		font-style: italic;
+		margin-bottom: 0.5em;
+		letter-spacing: 3px;
+	}
+	a:hover {
+		text-decoration: none;
+		color: red;
+	}
+}
+
+#footer {
+	letter-spacing: 3px;
 }
