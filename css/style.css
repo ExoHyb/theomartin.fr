@@ -1,6 +1,6 @@
 body {
   font-family: 'Dosis', sans-serif;
-  background: url(../img/background.png);
+  background: url(../img/background.png) fixed;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -10,6 +10,7 @@ body {
 .container {
   width: 80%;
   background-color: #fff;
+  margin-top: 5em;
 }
 
 .container-width {
@@ -161,6 +162,7 @@ label {
 
 #footer {
   letter-spacing: 3px;
+  margin-top: 5em;
 }
 
 #lien-pack {
@@ -170,6 +172,24 @@ label {
 #lien-pack:hover {
   text-decoration: none;
   color: #333;
+}
+
+.style-article {
+  padding: 0 3em;
+}
+
+.separate-line {
+  border-bottom: 1px solid #EEE;
+  width: 80%;
+  margin: 0.5em 0;
+}
+
+.img-article {
+  margin: auto;
+}
+
+.invisible-line {
+  margin-bottom: 3em;
 }
 
 /*# sourceMappingURL=style.css.map */

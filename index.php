@@ -53,20 +53,20 @@
                     </p>
                 </div>
                 <div id="tarif">49,00€/pages</div>
-                <div id="esp"><a href="#">En savoir plus...</a></div>
+                <div id="esp">En savoir plus...</div>
             </div>
         </a>
     </div>
     <div class="col-md-4">
         <a id="lien-pack" href="pack-iron-man.php">
             <div class="div-pack">
-                <img class="img-responsive" id="iron-man" src="img/iron-man.gif" alt="">
+                <img class="img-responsive" id="iron-man" src="img/iron-man.gif" alt="Gif Iron Man">
                 <div class="desc-pack">
                     <h3 class="text-center police-pack">Pack "Iron Man"</h3>
                     <p class="text-center">Ce pack convient parfaitemant à un artisans, commercant, souhaitant ce faire connaitre sur le web pour ainsi augmenter son chiffre d'affaire. Chaque demande du client est étudier pour lui fournir un site qui lui corresponde au mieux. Un travail soigné et une mise en place sur le net rapide.</p>
                 </div>
                 <div id="tarif">790,00€</div>
-                <div id="esp"><a href="#">En savoir plus...</a></div>
+                <div id="esp">En savoir plus...</div>
             </div>
         </a>
     </div>
@@ -80,7 +80,7 @@
                     Etude du projet avec le client, accompagnement sur long therme, optimisation du site...</p>
                 </div>
                 <div id="tarif">Uniquement sur devis</div>
-                <div id="esp"><a href="#">En savoir plus...</a></div>
+                <div id="esp">En savoir plus...</div>
             </div>
         </div>
         </a>
