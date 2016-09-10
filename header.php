@@ -84,11 +84,11 @@
 <!-- HEADER -->
 
 <!-- SHORT QUOTE -->
-        <div class="row">
+<!--         <div class="row">
             <div class="col-md-12">
                 <p class="text-center" id="info">Ce site est en constante évolution, n'hésiter pas à revenir voir les nouveautées !</p>
             </div>
-        </div>
+        </div> -->
 
         <div class="invisible-line"></div>
 <!-- SHORT QUOTE -->

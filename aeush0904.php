@@ -322,6 +322,103 @@ desired effect
     <section class="content">
 
       <!-- Your Page Content Here -->
+      
+        <div class="row">
+          <div class="col-md-6">
+            <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Derniers articles</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <div class="box-body table-responsive no-padding">
+              <table class="table table-hover">
+                <tr>
+                  <th>Titre de l'article</th>
+                  <th>Contenu</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td>Example</td>
+                  <td>Example</td>
+                  <td>Example</td>
+                </tr>
+                <tr>
+                  <td>Example</td>
+                  <td>Example</td>
+                  <td>Example</td>
+                </tr>
+                <tr>
+                  <td>Example</td>
+                  <td>Example</td>
+                  <td>Example</td>
+                </tr>
+                <tr>
+                  <td>Example</td>
+                  <td>Example</td>
+                  <td>Example</td>
+                </tr>
+                <tr>
+                  <td>Example</td>
+                  <td>Example</td>
+                  <td>Example</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          </div>
+          <div class="col-md-6">
+            <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Derniers commentaires</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body table-responsive no-padding">
+              <table class="table table-hover">
+                <tr>
+                  <th>Article</th>
+                  <th>Contenu</th>
+                  <th>Déposé par</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td>Example</td>
+                  <td>Example</td>
+                  <td>Example</td>
+                  <td>Example</td>
+                </tr>
+                <tr>
+                  <td>Example</td>
+                  <td>Example</td>
+                  <td>Example</td>
+                  <td>Example</td>
+                </tr>
+                <tr>
+                  <td>Example</td>
+                  <td>Example</td>
+                  <td>Example</td>
+                  <td>Example</td>
+                </tr>
+                <tr>
+                  <td>Example</td>
+                  <td>Example</td>
+                  <td>Example</td>
+                  <td>Example</td>
+                </tr>
+                <tr>
+                  <td>Example</td>
+                  <td>Example</td>
+                  <td>Example</td>
+                  <td>Example</td>
+                </tr>
+              </table>
+            </div>
+            </form>
+          </div>
+          </div>
+        </div>
+
 
     </section>
     <!-- /.content -->
