@@ -49,20 +49,22 @@
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Chercher un article">
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="btn btn-default">Cherchez</button>
       </form>
+
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="Mot de passe">
+        </div>
+        <button type="submit" class="btn btn-default">Connexion</button>
+      </form>
+
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Inscription</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
+        <li><a href="aeush0904.php">Accès admin provisoire</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -71,7 +73,7 @@
 
 
     <div class="container">
-    <div class="container-width">
+    <!-- <div class="container-width"> -->
       <!-- HEADER -->
         <div class="row">
             <div class="col-md-12">

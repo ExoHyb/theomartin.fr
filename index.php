@@ -1,5 +1,5 @@
 <?php include("header.php"); ?>
-
+<div class="container-width">
 <!-- DESCRIPTION 1 -->
 <div class="row">
     <div class="col-md-12">
@@ -13,9 +13,9 @@
                 (PHP) ce qui nous permet de répondre à une large demande du client (site vitrine, site sur mesure, CMS, e-Commerce, Blog, intranet de gestion, etc ...)
                 <br><br>
                 Fraichement sorti de  
-                <span id="codincamp"><a href="http://www.codincamp.fr/">Codi N Camp</a></span> 
+                <span id="codincamp"><a href="http://www.codincamp.fr/" target="_blank">Codi N Camp</a></span> 
                 by 
-                <span id="simplonco"><a href="http://simplon.co/">Simplon-co</a></span>
+                <span id="simplonco"><a href="http://simplon.co/" target="_blank">Simplon-co</a></span>
                 , Fabriques labellisées Grande Ecole du Numérique.
                 <br>
             </p>
@@ -112,5 +112,7 @@
     </div>
     <!-- PORTFOLIO -->
 
+
     <?php include("contact.php"); ?>
+    </div>
     <?php include("footer.php"); ?>

@@ -1,8 +1,8 @@
 <footer>
-	<p id="footer" class="text-center">Copyright <a href="theomartin.fr">theomartin.fr</a> | Tous droits réserver | N°SIRET : 80742990700023 | <a href="#">Mentions légal</a></p>
+	<p id="footer" class="text-center">Copyright <a href="index.php">theomartin.fr</a> | Tous droits réserver | N°SIRET : 80742990700023 | <a href="#">Mentions légal</a></p>
 </footer>
 
-</div>
+<!-- </div> -->
 </div>
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>

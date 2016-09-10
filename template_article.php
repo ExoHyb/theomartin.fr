@@ -30,6 +30,31 @@
 			</div>
 		</div>
 
+<!-- ARTICLE SIMILAIRE -->
+
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Articles similaire...</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<img class="img-responsive img-article" src="img/front-end-vs-back-end.jpg" alt="">
+				<h5>Titre de l'article</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum impedit, deserunt libero earum maiores molestiae necessita a doloremque iste?</p>
+			</div>
+			<div class="col-md-4">
+				<img class="img-responsive img-article" src="img/front-end-vs-back-end.jpg" alt="">
+				<h5>Titre de l'article</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea perspiciatis, fugiat sed, doloremque necessitatibus eius, reprehendeoccusamus.</p>
+			</div>
+			<div class="col-md-4">
+				<img class="img-responsive img-article" src="img/front-end-vs-back-end.jpg" alt="">
+				<h5>Titre de l'article</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium inventore doloremque magni, non illo nihil ab dolorum ca.</p>
+			</div>
+		</div>
+
 <!-- LAISSEZ UN COMMENTAIRES -->
 
 		<div class="row">
@@ -37,9 +62,13 @@
 
 				<h3>Commentaires</h3>
 				
-				<p>Vous êtes connecter en tant que <span>Inconu</span></p>
+				<p>Vous êtes connecter en tant que <span>Inconu</span> / Vous devez être connecter pour déposer un commentaire</p>
 
 				<textarea class="form-control" rows="3" placeholder="Ecrivez votre commentaire ici..."></textarea>
+
+				<button type="button" id="button-commentaire" class="btn btn-success">Envoyez</button>
+				
+				<div class="clearfix"></div>
 
 			</div>
 		</div>
@@ -57,6 +86,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit temporibus, enim tempore sunt nam nesciunt iste sit, maiores aliquid placeat voluptatem quibusdam non doloremque eligendi, quod architecto id voluptatum cum!</p>
 			</div>
 		</div>
+
 
 	</div>
 </div>
