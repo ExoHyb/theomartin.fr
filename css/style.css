@@ -274,6 +274,19 @@ label {
   .div-pack {
     margin: 0.5em 0;
   }
+
+  .menu-blog {
+    display: none;
+  }
+
+  .articles-similaire h5 {
+    text-align: center;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+  }
+  .articles-similaire p {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
