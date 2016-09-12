@@ -19,6 +19,27 @@
 
       <!-- Your Page Content Here -->
       
+      <form>
+        <div class="form-group">
+          <label for="">Titre</label>
+          <input type="text" class="form-control" id="" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="">Contenu</label>
+          <textarea class="form-control" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="">Catégories</label>
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <button type="submit">Envoyez</button>
+      </form>
 
 
     </section>
