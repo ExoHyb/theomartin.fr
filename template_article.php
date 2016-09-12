@@ -17,7 +17,7 @@
 			</div>
 		</div>
 
-<!-- RESEAUX SOCIAUX -->
+		<!-- RESEAUX SOCIAUX -->
 
 		<div class="row">
 			<div class="col-md-12">
@@ -30,7 +30,7 @@
 			</div>
 		</div>
 
-<!-- ARTICLE SIMILAIRE -->
+		<!-- ARTICLE SIMILAIRE -->
 
 		<div class="row">
 			<div class="col-md-12">
@@ -38,24 +38,26 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4">
-				<img class="img-responsive img-article" src="img/front-end-vs-back-end.jpg" alt="">
-				<h5>Titre de l'article</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum impedit, deserunt libero earum maiores molestiae necessita a doloremque iste?</p>
-			</div>
-			<div class="col-md-4">
-				<img class="img-responsive img-article" src="img/front-end-vs-back-end.jpg" alt="">
-				<h5>Titre de l'article</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea perspiciatis, fugiat sed, doloremque necessitatibus eius, reprehendeoccusamus.</p>
-			</div>
-			<div class="col-md-4">
-				<img class="img-responsive img-article" src="img/front-end-vs-back-end.jpg" alt="">
-				<h5>Titre de l'article</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium inventore doloremque magni, non illo nihil ab dolorum ca.</p>
+			<div class="articles-similaire">
+				<div class="col-md-4">
+					<img class="img-responsive img-article" src="img/front-end-vs-back-end.jpg" alt="">
+					<h5>Titre de l'article</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum impedit, deserunt libero earum maiores molestiae necessita a doloremque iste?</p>
+				</div>
+				<div class="col-md-4">
+					<img class="img-responsive img-article" src="img/front-end-vs-back-end.jpg" alt="">
+					<h5>Titre de l'article</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea perspiciatis, fugiat sed, doloremque necessitatibus eius, reprehendeoccusamus.</p>
+				</div>
+				<div class="col-md-4">
+					<img class="img-responsive img-article" src="img/front-end-vs-back-end.jpg" alt="">
+					<h5>Titre de l'article</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium inventore doloremque magni, non illo nihil ab dolorum ca.</p>
+				</div>
 			</div>
 		</div>
 
-<!-- LAISSEZ UN COMMENTAIRES -->
+		<!-- LAISSEZ UN COMMENTAIRES -->
 
 		<div class="row">
 			<div class="col-md-12">
@@ -73,7 +75,7 @@
 			</div>
 		</div>
 
-<!-- LES COMMENTAIRES DEPOSER -->
+		<!-- LES COMMENTAIRES DEPOSER -->
 
 		<div class="row">
 			<div class="col-md-12">
