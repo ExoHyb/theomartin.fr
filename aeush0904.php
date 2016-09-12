@@ -1,4 +1,9 @@
-<?php include("header_admin.php"); ?>
+<?php
+include("header_admin.php");
+require_once("class/blogManager.php");
+$bm = new blogManager();
+$posts = $bm->getPosts();
+?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -28,38 +33,20 @@
             <!-- /.box-header -->
             <!-- form start -->
             <div class="box-body table-responsive no-padding">
-              <table class="table table-hover">
-                <tr>
-                  <th>Titre de l'article</th>
-                  <th>Contenu</th>
-                  <th>Status</th>
-                </tr>
-                <tr>
-                  <td>Example</td>
-                  <td>Example</td>
-                  <td>Example</td>
-                </tr>
-                <tr>
-                  <td>Example</td>
-                  <td>Example</td>
-                  <td>Example</td>
-                </tr>
-                <tr>
-                  <td>Example</td>
-                  <td>Example</td>
-                  <td>Example</td>
-                </tr>
-                <tr>
-                  <td>Example</td>
-                  <td>Example</td>
-                  <td>Example</td>
-                </tr>
-                <tr>
-                  <td>Example</td>
-                  <td>Example</td>
-                  <td>Example</td>
-                </tr>
-              </table>
+                <table class="table table-hover">
+                    <tr>
+                        <th>Titre de l'article</th>
+                        <th>Contenu</th>
+                        <th>Status</th>
+                    </tr>
+                    <?php foreach($posts as $post){ ?>
+                        <tr>
+                            <td><?php echo $post->titre ?></td>
+                            <td><?php echo $post->contenu ?></td>
+                            <td><?php echo $post->categorie ?></td>
+                        </tr>
+                    <?php } ?>
+                </table>
             </div>
           </div>
 

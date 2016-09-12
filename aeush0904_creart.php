@@ -11,7 +11,6 @@ $cat = $bm->getCategory();
     <section class="content-header">
       <h1>
         Créer un article
-        <small>Optional description</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
@@ -24,20 +23,21 @@ $cat = $bm->getCategory();
 
       <!-- Your Page Content Here -->
       
-      <form>
+      <form action="aeush0904_displart.php" method="post">
+          <input type="hidden" value="ajout" name="a"/>
         <div class="form-group">
           <label for="">Titre</label>
-          <input type="text" class="form-control" id="" placeholder="">
+          <input type="text" class="form-control" name="titre">
         </div>
         <div class="form-group">
           <label for="">Contenu</label>
-          <textarea class="form-control" rows="3"></textarea>
+          <textarea class="form-control" name="contenu" rows="3"></textarea>
         </div>
         <div class="form-group">
           <label for="">Catégories</label>
-          <select class="form-control">
+          <select class="form-control" name="categorie">
             <?php foreach($cat as $c){ ?>
-                <option name="<?php echo $c->id;?>"><?php echo $c->libelle; ?></option>
+                <option value="<?php echo $c->id;?>"><?php echo $c->libelle; ?></option>
             <?php } ?>
           </select>
         </div>

@@ -9,20 +9,25 @@ class blogManager {
         $this->db = $db->dbh;
     }
 
-    function getPosts(){
+    function getPosts($category=null){
         $query = "SELECT * FROM articles";
+        if($category){
+            $query .= "WHERE categorie='".$category."'";
+        }
+
         $sth = $this->db->prepare($query);
         $sth->execute();
         $result = $sth->fetchAll(PDO::FETCH_OBJ);
 
-        var_dump($result);
+        return $result;
     }
 
     function addPost($title, $content, $date, $categorie, $image="null"){
         $query = "INSERT INTO articles (titre, contenu, date_publication, categorie, image)
                     VALUES ('".$title."', '".$content."', '".$date."', '".$categorie."', '".$image."')";
 
-        echo $query;
+        $sth = $this->db->prepare($query);
+        $sth->execute();
     }
 
     function getCategory($name=null){
@@ -42,14 +47,14 @@ class blogManager {
 
     function delCategory($id){
         $query = "DELETE FROM categories WHERE id=".$id;
-        $stmt = $this->db->prepare($query);
-        $stmt->execute();
+        $sth = $this->db->prepare($query);
+        $sth->execute();
     }
 
     function addCategory($name){
         $query = "INSERT INTO categories (libelle) VALUES ('".$name."')";
-        $stmt = $this->db->prepare($query);
-        $stmt->execute();
+        $sth = $this->db->prepare($query);
+        $sth->execute();
     }
 
 }
