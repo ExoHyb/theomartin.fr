@@ -2,6 +2,7 @@
 include("header_admin.php");
 require_once("class/blogManager.php");
 $bm = new blogManager();
+$cat = $bm->getCategory();
 ?>
 
   <!-- Content Wrapper. Contains page content -->
@@ -35,20 +36,13 @@ $bm = new blogManager();
         <div class="form-group">
           <label for="">Catégories</label>
           <select class="form-control">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <?php foreach($cat as $c){ ?>
+                <option name="<?php echo $c->id;?>"><?php echo $c->libelle; ?></option>
+            <?php } ?>
           </select>
         </div>
         <button type="submit">Envoyez</button>
       </form>
-
-      <?php
-        $bm->addPost("test", "test", date('Y-m-d h:s') , 1);
-
-      ?>
 
 
     </section>

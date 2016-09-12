@@ -25,4 +25,19 @@ class blogManager {
         echo $query;
     }
 
+    function getCategory($name=null){
+        $tab = [];
+        $query = "SELECT * FROM categories";
+        if($name){
+            $query .= " WHERE libelle= '".$name."'";
+        }
+        $sth = $this->db->prepare($query);
+        $sth->execute();
+        while($result = $sth->fetch(PDO::FETCH_OBJ)){
+            $tab[] = $result;
+        }
+
+        return $tab;
+    }
+
 }
