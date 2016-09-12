@@ -40,4 +40,16 @@ class blogManager {
         return $tab;
     }
 
+    function delCategory($id){
+        $query = "DELETE FROM categories WHERE id=".$id;
+        $stmt = $this->db->prepare($query);
+        $stmt->execute();
+    }
+
+    function addCategory($name){
+        $query = "INSERT INTO categories (libelle) VALUES ('".$name."')";
+        $stmt = $this->db->prepare($query);
+        $stmt->execute();
+    }
+
 }
