@@ -259,3 +259,9 @@ label {
 	width: 70%;
 	margin: auto;
 }
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 0.2em;
+	}
+}

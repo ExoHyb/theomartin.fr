@@ -77,7 +77,7 @@
     <!-- <div class="container-width"> -->
       <!-- HEADER -->
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-xs-12 col-sm-12 col-md-12">
                 <h1 class="text-center">Théo Martin</h1>
                 <h2 class="text-center" id="desc-1">Développeur Front-End / Intégrateurs Web</h2>
             </div>
