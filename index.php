@@ -2,7 +2,7 @@
 <div class="container-width">
 <!-- DESCRIPTION 1 -->
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="contain-description">
             <h3 class="text-center">Qui suis-je ?</h3>
             <p class="text-center">
@@ -25,7 +25,7 @@
 <!-- DESCRIPTION 1 -->
 <!-- DESCRIPTION 2 -->
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-xs-12 col-sm-12 col-md-12">
         <h3 class="text-center">Et vous êtes ?</h3>
         <div class="client-description">
             <p class="text-center">
@@ -37,12 +37,12 @@
 <!-- DESCRIPTION 2 -->
 <!-- PACK -->
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-xs-12 col-sm-12 col-md-12">
         <h3 class="text-center">Ce que je vous propose...</h3>
     </div>
 </div>
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-xs-12 col-sm-4 col-md-4">
         <a id="lien-pack" href="pack-seo.php">
             <div class="div-pack">
                 <img class="img-responsive" id="walle" src="img/walle.gif" alt="">
@@ -57,7 +57,7 @@
             </div>
         </a>
     </div>
-    <div class="col-md-4">
+    <div class="col-xs-12 col-sm-4 col-md-4">
         <a id="lien-pack" href="pack-iron-man.php">
             <div class="div-pack">
                 <img class="img-responsive" id="iron-man" src="img/iron-man.gif" alt="Gif Iron Man">
@@ -70,7 +70,7 @@
             </div>
         </a>
     </div>
-    <div class="col-md-4">
+    <div class="col-xs-12 col-sm-4 col-md-4">
         <a id="lien-pack" href="pack-optimus.php">
             <div class="div-pack">
             <img class="img-responsive" id="optimus" src="img/optimus.gif" alt="">
@@ -88,18 +88,18 @@
     <!-- PACK -->
     <!-- PORTFOLIO -->
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-xs-12 col-sm-12 col-md-12">
             <h3 class="text-center">Mes réalisations</h3>
             <div class="style-portfolio">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="display-portfolio">
                             <a href="http://assisesmednum.fr/" target="_blank">
                                 <img class="img-responsive img-portfolio" src="img/logo1.png" alt="Logo et accès au site des 4eme Assises National du Numérique à Mende">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="display-portfolio">
                             <a href="http://lozere.paej.fr/" target="_blank">
                                 <img class="img-responsive img-portfolio" src="img/logo2.png" alt="Logo et accès au site du Point Accueil Ecoute Jeune de Lozère">
