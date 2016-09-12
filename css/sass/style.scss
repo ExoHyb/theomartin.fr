@@ -262,6 +262,25 @@ label {
 
 @media (max-width: 768px) {
 	h1 {
-		font-size: 0.2em;
+		font-size: 1.5em;
+	}
+	#desc-1 {
+		font-size: 0.9em;
+	}
+	.contain-description {
+		width: 100%;
+		margin-top: 0;
+	}
+	h3 {
+		font-size: 1.3em;
+	}
+	footer {
+		font-size: 0.7em;
+	}
+	.style-form {
+		width: 100%;
+	}
+	.div-pack {
+		margin: 0.5em 0;
 	}
 }
