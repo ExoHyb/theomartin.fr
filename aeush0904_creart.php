@@ -1,4 +1,8 @@
-<?php include("header_admin.php"); ?>
+<?php
+include("header_admin.php");
+require_once("class/blogManager.php");
+$bm = new blogManager();
+?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -18,7 +22,10 @@
     <section class="content">
 
       <!-- Your Page Content Here -->
-      
+      <?php
+        $bm->addPost("test", "test", date('Y-m-d h:s') , 1);
+
+      ?>
 
 
     </section>
