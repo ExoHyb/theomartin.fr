@@ -63,7 +63,7 @@
       </form>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Inscription</a></li>
+        <li><a href="inscription.php">Inscription</a></li>
         <li><a href="aeush0904.php">Accès admin provisoire</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
