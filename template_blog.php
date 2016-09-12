@@ -37,7 +37,7 @@
 					</div>
 					<div class="col-md-9">
 						<h3><a href="template_article.php">Titre article</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sequi magni sint et nemo reiciendis nam adipisci dolor, commodi nesciunt dolorem ipsum expedita, modi perspiciatis numquam repellat reprehenderit. Esse, ratione?</p>
+						<p>lLorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sequi magni sint et nemo reiciendis nam adipisci dolor, commodi nesciunt dolorem ipsum expedita, modi perspiciatis numquam repellat reprehenderit. Esse, ratione?</p>
 					</div>
 				</div>
 				<div class="separate-line"></div>
