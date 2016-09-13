@@ -4,8 +4,8 @@ require_once("class/blogManager.php");
 $bm = new blogManager();
 
 if(isset($_POST['a'])){
-    if($_GET['a'] == 'ajout'){
-        $bm->addPost($_GET['titre'], $_GET['contenu'], date('Y-m-d h:s'), $_GET['categorie']);
+    if($_POST['a'] == 'ajout'){
+        $bm->addPost($_POST['titre'], $_POST['contenu'], date('Y-m-d h:s'), $_POST['categorie']);
     }
 }
 
