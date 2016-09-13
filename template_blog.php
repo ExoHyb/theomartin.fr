@@ -1,4 +1,9 @@
-<?php include("header.php"); ?>
+<?php
+require_once("class/blogManager.php");
+$bm = new blogManager();
+$posts = $bm->getPosts();
+include("header.php");
+?>
 
 <div class="row">
 	<div class="col-md-3">
@@ -7,54 +12,20 @@
 	<div class="col-md-9">
 		<div class="row">
 			<div class="style-display-article">
-				<div class="col-md-12">
-					<div class="row">
-						<div class="col-md-3">
-							<img class="img-responsive" src="img/front-end-vs-back-end.jpg" alt="">
-						</div>
-						<div class="col-md-9">
-							<h3><a href="template_article.php">Titre article</a></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sequi magni sint et nemo reiciendis nam adipisci dolor, commodi nesciunt dolorem ipsum expedita, modi perspiciatis numquam repellat reprehenderit. Esse, ratione?</p>
-						</div>
-					</div>
-					<div class="separate-line"></div>
-				</div>
-				<div class="col-md-12">
-					<div class="row">
-						<div class="col-md-3">
-							<img class="img-responsive" src="img/front-end-vs-back-end.jpg" alt="">
-						</div>
-						<div class="col-md-9">
-							<h3><a href="template_article.php">Titre article</a></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sequi magni sint et nemo reiciendis nam adipisci dolor, commodi nesciunt dolorem ipsum expedita, modi perspiciatis numquam repellat reprehenderit. Esse, ratione?</p>
-						</div>
-					</div>
-					<div class="separate-line"></div>
-				</div>
-				<div class="col-md-12">
-					<div class="row">
-						<div class="col-md-3">
-							<img class="img-responsive" src="img/front-end-vs-back-end.jpg" alt="">
-						</div>
-						<div class="col-md-9">
-							<h3><a href="template_article.php">Titre article</a></h3>
-							<p>lLorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sequi magni sint et nemo reiciendis nam adipisci dolor, commodi nesciunt dolorem ipsum expedita, modi perspiciatis numquam repellat reprehenderit. Esse, ratione?</p>
-						</div>
-					</div>
-					<div class="separate-line"></div>
-				</div>
-				<div class="col-md-12">
-					<div class="row">
-						<div class="col-md-3">
-							<img class="img-responsive" src="img/front-end-vs-back-end.jpg" alt="">
-						</div>
-						<div class="col-md-9">
-							<h3><a href="template_article.php">Titre article</a></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sequi magni sint et nemo reiciendis nam adipisci dolor, commodi nesciunt dolorem ipsum expedita, modi perspiciatis numquam repellat reprehenderit. Esse, ratione?</p>
-						</div>
-					</div>
-					<div class="separate-line"></div>
-				</div>
+                <?php foreach($posts as $post){ ?>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="img-responsive" src="img/front-end-vs-back-end.jpg" alt="">
+                            </div>
+                            <div class="col-md-9">
+                                <h3><a href="template_article.php&id=<?php echo $post->id; ?>"><?php echo $post->titre; ?></a></h3>
+                                <?php echo $bm->getExcerpt($post->id); ?>
+                            </div>
+                        </div>
+                        <div class="separate-line"></div>
+                    </div>
+                    <?php } ?>
 			</div>
 		</div>
 	</div>

@@ -44,7 +44,7 @@ include("header_admin.php");
                     <?php foreach($posts as $post){ ?>
                         <tr>
                             <td><?php echo $post->titre ?></td>
-                            <td><?php echo $post->contenu ?></td>
+                            <td><?php echo $bm->getExcerpt($post->id, false); ?></td>
                             <td><?php echo $post->categorie ?></td>
                         </tr>
                     <?php } ?>

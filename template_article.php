@@ -1,4 +1,20 @@
-<?php include("header.php"); ?>
+<?php
+require_once("class/blogManager.php");
+$bm = new blogManager();
+if(isset($_GET['id']) && $post = $bm->getPost($_GET['id'])){
+        $titre = $post->titre;
+        $contenu = $post->contenu;
+    }
+    else{
+        $titre = "Article introuvable";
+        $contenu = "L'article auquel vous cherchez à accéder semble ne pas éxister !";
+    }
+
+
+
+
+include("header.php");
+?>
 
 <div class="row">
 	<div class="col-md-3">
@@ -8,12 +24,8 @@
 		<div class="row">
 			<div class="col-md-12">
 				<img class="img-responsive img-article" src="img/front-end-vs-back-end.jpg" alt="">
-				<h3 class="text-center">Titre de l'article</h3>
-				<p>
-					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, possimus quas, adipisci deserunt vero incidunt praesentium earum aliquid fugit officia optio facilis numquam impedit laudantium! Nesciunt nulla, eius quod reiciendis.</span>
-					<span>Accusamus deleniti placeat omnis commodi vel molestias tempore minima voluptate, hic ratione. Veritatis quidem ullam dicta quis mollitia optio reprehenderit, iure id dignissimos, laboriosam maiores! Dolor sit molestiae iusto numquam.</span>
-					<span>Facilis animi neque facere saepe sunt totam voluptatem mollitia iste fuga atque. Non temporibus laboriosam quo odit deserunt officiis reprehenderit, fugit quidem magni obcaecati, eligendi natus a nam at aperiam.</span>
-				</p>
+				<h3 class="text-center"><?php echo $titre; ?></h3>
+				<?php echo $contenu; ?>
 			</div>
 		</div>
 

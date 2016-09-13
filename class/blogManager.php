@@ -72,6 +72,15 @@ class blogManager {
         return $tab;
     }
 
+    function getCategoryName($id){
+        $query = "SELECT libelle FROM categories WHERE id=".$id;
+        $sth = $this->db->prepare($query);
+        $sth->execute();
+        $result = $sth->fetch(PDO::FETCH_OBJ);
+
+        return $result->libelle;
+    }
+
     function delCategory($id){
         $query = "DELETE FROM categories WHERE id=".$id;
         $sth = $this->db->prepare($query);
@@ -82,6 +91,18 @@ class blogManager {
         $query = "INSERT INTO categories (libelle) VALUES ('".$name."')";
         $sth = $this->db->prepare($query);
         $sth->execute();
+    }
+
+    function getExcerpt($id, $link = true){
+        $query = "SELECT contenu FROM articles WHERE id=".$id;
+        $sth = $this->db->prepare($query);
+        $sth->execute();
+        $result = $sth->fetch(PDO::FETCH_OBJ);
+        $excerpt = substr($result->contenu, 0, 145).'...';
+        if($link){
+            $excerpt .= '<a href="template_article.php?id='.$id.'">Lire la suite</a>';
+        }
+        return $excerpt;
     }
 
 }
