@@ -10,11 +10,11 @@ $error = '';
 if(isset($_POST['a'])){
     if($_POST['a'] == 'ajout'){
         if(empty($_POST['titre'])){
-            $error .= 'Le champ titre ne peut pas être vide.';
+            $error .= '- Le champ titre ne peut pas être vide.<br/>';
         }
 
         if(empty($_POST['contenu'])){
-            $error .= 'Veuillez mettre du contenu à votre article.';
+            $error .= '- Veuillez mettre du contenu à votre article.<br/>';
         }
 
         if($error != ''){
