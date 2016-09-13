@@ -1,0 +1,43 @@
+.menu-blog {
+	position: fixed;
+	text-transform: uppercase;
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+	li {
+		letter-spacing: 3px;
+		font-size: 1em;
+		// border: 1px solid red;
+		a {
+			display: block;
+			position: relative;
+			overflow: hidden;
+			padding-left: 20px;
+			height: 50px;
+			line-height: 50px;
+			text-decoration: none;
+		}
+
+		a:hover{
+			background: #efefef;
+		}
+		
+		.color1 {
+			border-left: 5px solid #33B8E1;
+		}
+
+		.color2 {
+			border-left: 5px solid #19DCEB;
+		}
+		.color3 {
+			border-left: 5px solid #21D4B0;
+		}
+		.color4 {
+			border-left: 5px solid #19EB85;
+		}
+		.color5 {
+			border-left: 5px solid #18E146;
+		}
+	}
+}
