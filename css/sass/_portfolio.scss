@@ -1,0 +1,82 @@
+.police-pack {
+	font-family: 'Dosis', sans-serif;
+	color: #252525;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+#iron-man, #optimus, #walle {
+	width: 100%;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	height: 10em;
+}
+
+.typo-pack {
+	font-family: 'Anton', sans-serif;
+}
+
+.desc-pack {
+	padding: 0.5em;
+}
+
+.contain-description {
+	width: 70%;
+	margin: auto;
+	margin-top: 3.5em;
+}
+
+.style-form {
+	width: 50%;
+	margin: auto;
+	margin-bottom: 5em;
+}
+
+.img-portfolio {
+	margin: auto;
+}
+
+#codincamp {
+	a {
+		color: #71B43D;
+	}
+	a:hover {
+		text-decoration: none;
+		color: #3F7C10;
+	}
+}
+
+#simplonco {
+	a {
+		color: #D7254E;
+	}
+	a:hover {
+		text-decoration: none;
+		color: #D7254E;
+	}
+}
+
+#tarif {
+	text-align: center;
+	letter-spacing: 3px;
+	font-style: italic;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+#lien-pack {
+	color: #333;
+}
+
+#lien-pack:hover {
+	text-decoration: none;
+	color: #333;
+}
+
+.form-inscription {
+	width: 50%;
+	margin: auto;
+	#asterix-red {
+		color: red;
+	}
+}

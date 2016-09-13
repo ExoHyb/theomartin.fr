@@ -19,16 +19,16 @@
 
 		<!-- RESEAUX SOCIAUX -->
 
-		<div class="row">
-			<div class="col-md-12">
-				
-				<h3>Partagez cet article</h3>
+<!-- 		<div class="row">
+	<div class="col-md-12">
+		
+		<h3>Partagez cet article</h3>
 
-				<a href="#"><img src="img/twitter.png" alt=""></a>
-				<a href="#"><img src="img/facebook.png" alt=""></a>
+		<a href="#"><img src="img/twitter.png" alt=""></a>
+		<a href="#"><img src="img/facebook.png" alt=""></a>
 
-			</div>
-		</div>
+	</div>
+</div> -->
 
 		<!-- ARTICLE SIMILAIRE -->
 
@@ -77,15 +77,85 @@
 
 		<!-- LES COMMENTAIRES DEPOSER -->
 
-		<div class="row">
+		<div class="titre-commentaire">
+			<div class="row">
 			<div class="col-md-12">
 				<h3>3 Commentaires</h3>
 			</div>
 		</div>
+		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<p>Par <span>Inconnu</span></p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit temporibus, enim tempore sunt nam nesciunt iste sit, maiores aliquid placeat voluptatem quibusdam non doloremque eligendi, quod architecto id voluptatum cum!</p>
+				
+				<div class="row">
+					<div class="col-md-1">
+						<img class="img-responsive img-profil-com" src="img/profil4.png" alt="">
+					</div>
+					<div class="col-md-11 com-position com-position">
+						<span id="pseudo-commentaire">Jacquie</span>
+							<br>
+						<span>Il y à 6 mois</span>
+					</div>
+				</div>
+				<p class="position-text-com">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit temporibus, enim tempore sunt nam nesciunt iste sit, maiores aliquid placeat voluptatem quibusdam non doloremque eligendi, quod architecto id voluptatum cum!</p>
+			</div>
+		</div>
+			<div class="separate-line"></div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-1">
+						<img class="img-responsive img-profil-com" src="img/profil8.png" alt="">
+					</div>
+					<div class="col-md-11 com-position">
+						<span id="pseudo-commentaire">Michel</span>
+							<br>
+						<span>Il y à 6 mois</span>
+					</div>
+				</div>
+				<p class="position-text-com">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit temporibus, enim tempore sunt nam nesciunt iste sit, maiores aliquid placeat voluptatem quibusdam non doloremque eligendi, quod architecto id voluptatum cum!</p>
+			</div>
+			<div class="col-md-11 col-md-offset-1">
+				<div class="row">
+					<div class="col-md-1">
+						<img class="img-responsive img-profil-com" src="img/profil5.png" alt="">
+					</div>
+					<div class="col-md-11 com-position">
+						<span id="pseudo-commentaire">Marc</span>
+							<br>
+						<span>Il y à 6 mois</span>
+					</div>
+				</div>
+				<p class="position-text-com">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, pariatur, cumque. Et quisquam repudiandae quam a corporis modi dolorem repellendus esse pariatur voluptate unde deserunt laboriosam, quaerat commodi saepe. Ea.</p>
+			</div>
+			<div class="col-md-11 col-md-offset-1">
+				<div class="row">
+					<div class="col-md-1">
+						<img class="img-responsive img-profil-com" src="img/profil7.png" alt="">
+					</div>
+					<div class="col-md-11 com-position">
+						<span id="pseudo-commentaire">Clara</span>
+							<br>
+						<span>Il y à 6 mois</span>
+					</div>
+				</div>
+				<p class="position-text-com">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, pariatur, cumque. Et quisquam repudiandae quam a corporis modi dolorem repellendus esse pariatur voluptate unde deserunt laboriosam, quaerat commodi saepe. Ea.</p>
+			</div>
+		</div>
+			<div class="separate-line"></div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-1">
+						<img class="img-responsive img-profil-com" src="img/profil9.png" alt="">
+					</div>
+					<div class="col-md-11 com-position">
+						<span id="pseudo-commentaire">Papy voyeur</span>
+							<br>
+						<span>Il y à 6 mois</span>
+					</div>
+				</div>
+				<p class="position-text-com">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit temporibus, enim tempore sunt nam nesciunt iste sit, maiores aliquid placeat voluptatem quibusdam non doloremque eligendi, quod architecto id voluptatum cum!</p>
 			</div>
 		</div>
 

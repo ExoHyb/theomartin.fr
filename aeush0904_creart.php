@@ -40,10 +40,19 @@ include("header_admin.php");
           <label for="">Titre</label>
           <input type="text" class="form-control" name="titre">
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label for="">Contenu</label>
           <textarea class="form-control" name="contenu" rows="3"></textarea>
-        </div>
+        </div> -->
+
+            <textarea name="contenu" id="contenu" rows="10" cols="80">
+              
+            </textarea>
+
+            <script>
+                CKEDITOR.replace( 'contenu' );
+            </script>
+
         <div class="form-group">
           <label for="">Catégories</label>
           <select class="form-control" name="categorie">
@@ -52,7 +61,7 @@ include("header_admin.php");
             <?php } ?>
           </select>
         </div>
-        <button type="submit">Envoyez</button>
+        <button class="btn btn-success" type="submit">Envoyez</button>
       </form>
 
 
