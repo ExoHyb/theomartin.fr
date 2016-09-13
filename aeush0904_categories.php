@@ -80,7 +80,7 @@ $cat = $bm->getCategory();
                     <label for="">Nom de la catégorie</label>
                     <input type="text" name="nom" class="form-control">
                   </div>
-                  <button class="btn btn-default" type="submit">Créer</button>
+                  <button class="btn btn-success" type="submit">Créer</button>
                 </form>
               </div>
             </div>
