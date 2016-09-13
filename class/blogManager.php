@@ -30,6 +30,12 @@ class blogManager {
         $sth->execute();
     }
 
+    function delPost($id){
+        $query = "DELETE FROM articles WHERE id=".$id;
+        $sth = $this->db->prepare($query);
+        $sth->execute();
+    }
+
     function getCategory($name=null){
         $tab = [];
         $query = "SELECT * FROM categories";

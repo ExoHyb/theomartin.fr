@@ -1,12 +1,24 @@
 <?php
-include("header_admin.php");
+require_once("class/eventManager.php");
+$em = new eventManager();
+
 require_once("class/blogManager.php");
 $bm = new blogManager();
 $cat = $bm->getCategory();
+
+if(isset($_POST['a'])){
+    if($_POST['a'] == 'ajout'){
+        $bm->addPost($_POST['titre'], $_POST['contenu'], date('Y-m-d h:s'), $_POST['categorie']);
+        $em->addEvent('Création réussie !', 'L\'article a été créé avec succès. Redirection en cours...');
+        header('refresh:3;url=aeush0904_displart.php');
+    }
+}
+
+include("header_admin.php");
 ?>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
@@ -20,10 +32,9 @@ $cat = $bm->getCategory();
 
     <!-- Main content -->
     <section class="content">
-
       <!-- Your Page Content Here -->
       
-      <form action="aeush0904_displart.php" method="post">
+      <form action="aeush0904_creart.php" method="post">
           <input type="hidden" value="ajout" name="a"/>
         <div class="form-group">
           <label for="">Titre</label>

@@ -1,20 +1,31 @@
 <?php
-include("header_admin.php");
+require_once("class/eventManager.php");
+$em = new eventManager();
 require_once("class/blogManager.php");
 $bm = new blogManager();
+$posts = $bm->getPosts();
 
-if(isset($_POST['a'])){
-    if($_POST['a'] == 'ajout'){
-        $bm->addPost($_POST['titre'], $_POST['contenu'], date('Y-m-d h:s'), $_POST['categorie']);
+if(isset($_GET['a']) && $_GET['a'] == 'suppr' && isset($_GET['id'])){
+    if(!isset($_GET['conf'])){
+        $event_text = 'Êtes-vous certain de vouloir supprimer cet article ? <br/><br/>
+                <a href="aeush0904_displart.php?a=suppr&conf=1&id='.$_GET['id'].'" class="btn btn-success"><i class="fa fa-check"></i></a>
+                <a href="aeush0904_displart.php" class="btn btn-danger"><i class="fa fa-close"></i></a></a>';
+
+        $em->addEvent('Confirmation',$event_text, 'warning');
+
+    }
+    elseif($_GET['conf']==1 && isset($_GET['id'])){
+        $bm->delPost($_GET['id']);
+        header('location:aeush0904_displart.php?e=1');
     }
 }
 
-$posts = $bm->getPosts();
+if(isset($_GET['e']) && $_GET['e'] == 1){
+    $em->addEvent('Suppression réussie !', 'La suppression de l\'article s\'est déroulée avec succès.');
+}
 
+include("header_admin.php");
 ?>
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
@@ -60,7 +71,6 @@ $posts = $bm->getPosts();
 
     </section>
     <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
+
 
 <?php include("footer_admin.php"); ?>

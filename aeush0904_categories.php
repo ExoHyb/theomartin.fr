@@ -1,5 +1,8 @@
 <?php
-include("header_admin.php");
+require_once("class/eventManager.php");
+$em = new eventManager();
+
+
 require_once("class/blogManager.php");
 
 $bm = new blogManager();
@@ -17,10 +20,9 @@ if(isset($_GET['a'])){
 }
 
 $cat = $bm->getCategory();
-?>
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+include("header_admin.php");
+?>
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
@@ -91,7 +93,5 @@ $cat = $bm->getCategory();
 
     </section>
     <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
 
 <?php include("footer_admin.php"); ?>

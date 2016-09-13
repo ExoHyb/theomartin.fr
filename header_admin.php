@@ -304,3 +304,8 @@ desired effect
     </section>
     <!-- /.sidebar -->
   </aside>
+  <div class="content-wrapper">
+
+<?php
+$em->printEvents();
+?>
