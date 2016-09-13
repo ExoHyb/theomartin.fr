@@ -9,10 +9,14 @@ class blogManager {
         $this->db = $db->dbh;
     }
 
-    function getPosts($category=null){
+    function getPosts($category=null, $limit=null, $order="DESC"){
         $query = "SELECT * FROM articles";
         if($category){
             $query .= "WHERE categorie='".$category."'";
+        }
+        $query .= " ORDER BY date_publication ".$order;
+        if($limit){
+            $query .= " LIMIT ".$limit;
         }
 
         $sth = $this->db->prepare($query);

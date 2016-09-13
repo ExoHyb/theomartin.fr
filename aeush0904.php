@@ -4,7 +4,7 @@ $em = new eventManager();
 
 require_once("class/blogManager.php");
 $bm = new blogManager();
-$posts = $bm->getPosts();
+$posts = $bm->getPosts(null, 5);
 
 
 include("header_admin.php");
