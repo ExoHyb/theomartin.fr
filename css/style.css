@@ -171,6 +171,24 @@ h3 {
   float: right;
 }
 
+.style-display-article {
+  margin-top: 2em;
+}
+
+.style-article {
+  padding: 0 3em;
+}
+
+.separate-line {
+  border-bottom: 1px solid #EEE;
+  width: 80%;
+  margin: 0.5em 0;
+}
+
+.img-article {
+  margin: auto;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 1.5em;
@@ -223,6 +241,14 @@ body {
   letter-spacing: 2px;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+#asterix-red {
+  color: red;
+}
+
 nav {
   text-align: center;
 }
@@ -259,10 +285,6 @@ nav a:hover {
 .div-pack {
   border: 1px solid #D6D6D6;
   border-radius: 3px;
-}
-
-#aste {
-  color: red;
 }
 
 label {

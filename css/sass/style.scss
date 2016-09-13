@@ -3,6 +3,7 @@
 @import "portfolio";
 @import "menu-blog";
 @import "commentaires";
+@import "articles";
 @import "media-mobile";
 
 body {
@@ -12,6 +13,14 @@ body {
 	background-repeat: no-repeat;
 	background-position: center center;
 	letter-spacing: 2px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#asterix-red {
+	color: red;
 }
 
 nav {
@@ -52,9 +61,6 @@ nav {
 	border-radius: 3px;
 }
 
-#aste {
-	color: red;
-}
 
 label {
 	text-align: center;
