@@ -22,6 +22,16 @@
 		<input type="password" class="form-control" id="" placeholder="">
 	</div>
 	<button type="submit"      class="btn btn-default">Envoyez</button>
+
+<!-- 	<textarea name="editor1" id="editor1" rows="10" cols="80">
+                This is my textarea to be replaced with CKEditor.
+            </textarea>
+            <script>
+                // Replace the <textarea id="editor1"> with a CKEditor
+                // instance, using default configuration.
+                CKEDITOR.replace( 'editor1' );
+            </script> -->
+
 </form>
 
 <?php include("footer.php"); ?>
