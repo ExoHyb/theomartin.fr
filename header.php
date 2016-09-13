@@ -36,16 +36,6 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.php">Portfolio <span class="sr-only">(current)</span></a></li>
         <li><a href="template_blog.php">Blog</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Catégories <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">HTML/CSS</a></li>
-            <li><a href="#">PHP</a></li>
-            <li><a href="#">Python</a></li>
-            <li><a href="#">Divers</a></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
       </ul>
 
       <form class="navbar-form navbar-right">
