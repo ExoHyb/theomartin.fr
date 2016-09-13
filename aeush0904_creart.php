@@ -7,28 +7,28 @@ $bm = new blogManager();
 $cat = $bm->getCategory();
 $error = '';
 
-if(isset($_GET['a']) && $_GET['a'] == 'modif'){
-    if(isset($_POST['titre'])){
-        $titre = $_POST['titre'];
-    } elseif(isset($_GET['id'])){
-        $post = $bm->getPost($_GET['id']);
-        $titre = $post->titre;
-    }
 
-    if(isset($_POST['contenu'])){
-        $contenu = $_POST['contenu'];
-    } elseif(isset($_GET['id'])){
-        $post = $bm->getPost($_GET['id']);
-        $contenu = $post->contenu;
-    }
-
-    if(isset($_POST['categorie'])){
-        $categorie = $_POST['categorie'];
-    } elseif(isset($_GET['id'])){
-        $post = $bm->getPost($_GET['id']);
-        $categorie = $post->categorie;
-    }
+if(isset($_POST['titre'])){
+    $titre = $_POST['titre'];
+} elseif(isset($_GET['id'])){
+    $post = $bm->getPost($_GET['id']);
+    $titre = $post->titre;
 }
+
+if(isset($_POST['contenu'])){
+    $contenu = $_POST['contenu'];
+} elseif(isset($_GET['id'])){
+    $post = $bm->getPost($_GET['id']);
+    $contenu = $post->contenu;
+}
+
+if(isset($_POST['categorie'])){
+    $categorie = $_POST['categorie'];
+} elseif(isset($_GET['id'])){
+    $post = $bm->getPost($_GET['id']);
+    $categorie = $post->categorie;
+}
+
 
 if(isset($_POST['a']) && $_POST['a'] == 'ajout'){
     if(empty($_POST['titre'])){
@@ -48,7 +48,7 @@ if(isset($_POST['a']) && $_POST['a'] == 'ajout'){
             $bm->modPost($_GET['id'], $titre, $contenu, $categorie);
             $em->addEvent('Modification réussie !', 'L\'article a été modifié avec succès. Redirection en cours...');
         }else{
-            $bm->addPost($_POST['titre'], $_POST['contenu'], date('Y-m-d h:s'), $categorie);
+            $bm->addPost($titre, $contenu, date('Y-m-d h:s'), $categorie);
             $em->addEvent('Création réussie !', 'L\'article a été créé avec succès. Redirection en cours...');
         }
 
@@ -75,7 +75,7 @@ include("header_admin.php");
     <section class="content">
       <!-- Your Page Content Here -->
       
-      <form action="aeush0904_creart.php?a=modif&<?php echo (isset($_GET['id'])) ? 'id='.$_GET['id'] : ''; ?>" method="POST">
+      <form action="aeush0904_creart.php<?php echo (isset($_GET['id'])) ? '?a=modif&id='.$_GET['id'] : ''; ?>" method="POST">
           <input type="hidden" value="ajout" name="a"/>
         <div class="form-group">
           <label for="">Titre</label>
