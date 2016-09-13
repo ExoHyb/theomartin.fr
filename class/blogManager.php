@@ -9,6 +9,14 @@ class blogManager {
         $this->db = $db->dbh;
     }
 
+    function getPost($id){
+        $query = "SELECT * FROM articles WHERE id=".$id;
+        $sth = $this->db->prepare($query);
+        $sth->execute();
+        $result = $sth->fetch(PDO::FETCH_OBJ);
+        return $result;
+    }
+
     function getPosts($category=null, $limit=null, $order="DESC"){
         $query = "SELECT * FROM articles";
         if($category){
@@ -26,9 +34,18 @@ class blogManager {
         return $result;
     }
 
-    function addPost($title, $content, $date, $categorie, $image="null"){
+    function addPost($title, $content, $date, $category, $image="null"){
         $query = "INSERT INTO articles (titre, contenu, date_publication, categorie, image)
-                    VALUES ('".$title."', '".$content."', '".$date."', '".$categorie."', '".$image."')";
+                    VALUES ('".$title."', '".$content."', '".$date."', '".$category."', '".$image."')";
+
+        $sth = $this->db->prepare($query);
+        $sth->execute();
+    }
+
+    function modPost($id, $title, $content, $category, $image="null"){
+        $query = "UPDATE articles
+          SET titre='".$title."', contenu='".$content."', categorie='".$category."', image='".$image."'
+          WHERE id=".$id;
 
         $sth = $this->db->prepare($query);
         $sth->execute();

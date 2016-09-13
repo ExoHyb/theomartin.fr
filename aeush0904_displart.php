@@ -58,8 +58,8 @@ include("header_admin.php");
                             <td><?php echo $post->contenu ?></td>
                             <td><?php echo $post->categorie ?></td>
                             <td>
-                                <a class="btn btn-warning"><i class="fa fa-pencil"></i></a>
-                                <a href="aeush0904_displart.php?a=suppr&id=<?php echo $post->id?>" class="btn btn-danger"><i class="fa fa-close"></i></a>
+                                <a href="aeush0904_creart.php?a=modif&id=<?php echo $post->id; ?>" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
+                                <a href="aeush0904_displart.php?a=suppr&id=<?php echo $post->id; ?>" class="btn btn-danger"><i class="fa fa-close"></i></a>
                             </td>
                         </tr>
                     <?php } ?>
