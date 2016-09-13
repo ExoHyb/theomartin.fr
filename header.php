@@ -12,6 +12,7 @@
           <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+          <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
           <link rel="stylesheet" href="css/style.css">
     </head>
 <body>
@@ -91,5 +92,4 @@
             </div>
         </div> -->
 
-        <div class="invisible-line"></div>
 <!-- SHORT QUOTE -->
