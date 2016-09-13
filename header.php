@@ -47,12 +47,6 @@
           </ul>
         </li>
       </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Chercher un article">
-        </div>
-        <button type="submit" class="btn btn-default">Cherchez</button>
-      </form>
 
       <form class="navbar-form navbar-right">
         <div class="form-group">
@@ -66,7 +60,7 @@
 
       <ul class="nav navbar-nav navbar-right">
         <li><a href="inscription.php">Inscription</a></li>
-        <li><a href="aeush0904.php">Accès admin provisoire</a></li>
+        <li><a href="aeush0904.php">Admin</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
