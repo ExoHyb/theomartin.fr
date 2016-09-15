@@ -31,7 +31,7 @@
 
 .badge-article {
 	float: left;
-	padding-top: 0.5em;
+	padding-top: 0.3em;
 	padding-bottom: 0.5em;
 	background-color: rgba(141, 242, 255, 0.3);
 	width: 49%;
@@ -58,7 +58,46 @@
 	}
 }
 
+.part-sociaux {
+	float: left;
+	padding-top: 0.3em;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+	background-color: rgba(141, 242, 255, 0.2);
+	width: 49%;
+	border-radius: 5px;
+	min-height: 11em;
+	margin-bottom: 1em;
+	h5 {
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+}
+
 .art-simi {
+	float: left;
+	padding-top: 0.3em;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+	background-color: rgba(141, 242, 255, 0.2);
+	width: 49%;
+	border-radius: 5px;
+	min-height: 11em;
+	margin-top: -0.5em;
+	margin-bottom: 1em;
+	margin-right: 0.5em;
+	h5 {
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	ul {
+		li {
+			list-style-image : url(../img/fleche.png);
+		}
+	}
+}
+
+.flashquest {
 	float: left;
 	padding-top: 0.3em;
 	padding-bottom: 0.5em;
@@ -68,13 +107,14 @@
 	border-radius: 5px;
 	min-height: 11em;
 	margin-bottom: 1em;
+	margin-top: -0.5em;
 	h5 {
 		font-weight: bold;
 		text-transform: uppercase;
 	}
 	ul {
 		li {
-			list-style-image : url(img/fleche.png);
+			list-style-image : url(../img/fleche.png);
 		}
 	}
 }

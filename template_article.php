@@ -63,8 +63,8 @@ include("header.php");
 	<div class="clearfix"></div>
 </div>
 
-<div class="art-simi">
-	<h5>Flash'Quest</h5>
+<div class="part-sociaux">
+	<h5>Partagez cet article</h5>
 	<ul>
 		<li><a href="#">APIM Policy to convert and incoming GET request...</a></li>
 		<li><a href="#">Getting running an example for node-webgl</a></li>
@@ -74,36 +74,63 @@ include("header.php");
 	</ul>
 </div>
 
+<div class="art-simi">
+	<h5>Articles similaire</h5>
+	<ul>
+		<li><a href="#">APIM Policy to convert and incoming GET request...</a></li>
+		<li><a href="#">Getting running an example for node-webgl</a></li>
+		<li><a href="#">Fatal signal 11(SISSEGV) caused by google...</a></li>
+		<li><a href="#">Angular Directive Link Function Add Items To...</a></li>
+		<li><a href="#">APIM Policy to convert and incoming GET request...</a></li>
+	</ul>
+</div>
+
+<div class="flashquest">
+	<h5>Flash'Quest</h5>
+	<ul>
+		<li><a href="#">APIM Policy to convert and incoming GET request...</a></li>
+		<li><a href="#">Getting running an example for node-webgl</a></li>
+		<li><a href="#">Fatal signal 11(SISSEGV) caused by google...</a></li>
+		<li><a href="#">Angular Directive Link Function Add Items To...</a></li>
+		<li><a href="#">APIM Policy to convert and incoming GET request...</a></li>
+	</ul>
+</div>
 <div class="clearfix"></div>
 
 <!-- ARTICLE SIMILAIRE -->
 
-<div class="border-articles"></div>
+<!-- <div class="border-articles"></div> -->
 
-<div class="row">
+<!-- <div class="row">
 	<div class="col-md-12">
 		<h3>Articles similaire</h3>
 	</div>
-</div>
-<div class="articles-similaire">
+</div> -->
+
+<!-- <div class="articles-similaire">
 	<div class="row">
-		<div class="col-md-4">
+		<div class="col-md-3">
+				<img class="img-responsive img-article" src="img/front-end-vs-back-end.jpg" alt="">
+				<h5>Titre de l'article</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing... <a href="#">[Lire la suite]</a></p>
+		</div>
+		<div class="col-md-3">
 			<img class="img-responsive img-article" src="img/front-end-vs-back-end.jpg" alt="">
 			<h5>Titre de l'article</h5>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing... <a href="#">[Lire la suite]</a></p>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-3">
 			<img class="img-responsive img-article" src="img/front-end-vs-back-end.jpg" alt="">
 			<h5>Titre de l'article</h5>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing... <a href="#">[Lire la suite]</a></p>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-3">
 			<img class="img-responsive img-article" src="img/front-end-vs-back-end.jpg" alt="">
 			<h5>Titre de l'article</h5>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing... <a href="#">[Lire la suite]</a></p>
 		</div>
 	</div>
-</div>
+</div> -->
 
 <!-- LAISSEZ UN COMMENTAIRES -->
 <div class="border-articles"></div>
