@@ -112,6 +112,7 @@ h3 {
   position: fixed;
   text-transform: uppercase;
   border-right: 1px solid #eee;
+  height: 89%;
 }
 .menu-blog ul {
   list-style: none;
