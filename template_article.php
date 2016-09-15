@@ -46,7 +46,7 @@ include("header.php");
 <div class="badge-article">
 	<img class="img-responsive photo-profil" src="img/profil2.png" alt="">
 	<div class="prez-text">
-		<p>Sophie</p>
+		<h5>Sophie</h5>
 		<p>Dévelopeuse Front-End / Intégratice</p>
 		<div class="progress">
 			<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
@@ -61,6 +61,17 @@ include("header.php");
 		</a>
 	</div>
 	<div class="clearfix"></div>
+</div>
+
+<div class="art-simi">
+	<h5>Flash'Quest</h5>
+	<ul>
+		<li><a href="#">APIM Policy to convert and incoming GET request...</a></li>
+		<li><a href="#">Getting running an example for node-webgl</a></li>
+		<li><a href="#">Fatal signal 11(SISSEGV) caused by google...</a></li>
+		<li><a href="#">Angular Directive Link Function Add Items To...</a></li>
+		<li><a href="#">APIM Policy to convert and incoming GET request...</a></li>
+	</ul>
 </div>
 
 <div class="clearfix"></div>

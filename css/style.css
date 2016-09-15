@@ -205,13 +205,19 @@ h3 {
 }
 
 .badge-article {
+  float: left;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   background-color: rgba(141, 242, 255, 0.3);
-  width: 50%;
+  width: 49%;
   border-radius: 5px;
-  min-height: 8em;
+  min-height: 11em;
   margin-bottom: 1em;
+  margin-right: 0.5em;
+}
+.badge-article h5 {
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .badge-article .photo-profil {
   width: 25%;
@@ -225,6 +231,25 @@ h3 {
 .badge-article .reseaux-sociaux {
   width: 10%;
   float: left;
+}
+
+.art-simi {
+  float: left;
+  padding-top: 0.3em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  background-color: rgba(141, 242, 255, 0.3);
+  width: 49%;
+  border-radius: 5px;
+  min-height: 11em;
+  margin-bottom: 1em;
+}
+.art-simi h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.art-simi ul li {
+  list-style-image: url(img/fleche.png);
 }
 
 @media (max-width: 768px) {
