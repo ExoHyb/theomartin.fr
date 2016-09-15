@@ -1,6 +1,8 @@
 .menu-blog {
+	margin-top: 1em;
 	position: fixed;
 	text-transform: uppercase;
+	border-right: 1px solid #eee;
 	ul {
 		list-style: none;
 		padding: 0;
@@ -41,3 +43,6 @@
 		}
 	}
 }
+		#border-top-menu {
+			border-top: 5px solid #18E146;
+		}

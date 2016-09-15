@@ -20,6 +20,7 @@ h3 {
   width: 80%;
   background-color: #fff;
   margin-top: 5em;
+  min-height: 100%;
 }
 
 .container-width {
@@ -107,8 +108,10 @@ h3 {
 }
 
 .menu-blog {
+  margin-top: 1em;
   position: fixed;
   text-transform: uppercase;
+  border-right: 1px solid #eee;
 }
 .menu-blog ul {
   list-style: none;
@@ -144,6 +147,10 @@ h3 {
 }
 .menu-blog li .color5 {
   border-left: 5px solid #18E146;
+}
+
+#border-top-menu {
+  border-top: 5px solid #18E146;
 }
 
 #pseudo-commentaire {
@@ -232,6 +239,10 @@ h3 {
     display: none;
   }
 }
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Dosis', sans-serif;
   background: url(../img/background.png) fixed;
@@ -308,6 +319,8 @@ label {
 #footer {
   letter-spacing: 3px;
   margin-top: 5em;
+  width: 60%;
+  margin: auto;
 }
 
 .mentions-legal {

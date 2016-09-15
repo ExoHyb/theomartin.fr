@@ -6,6 +6,10 @@
 @import "articles";
 @import "media-mobile";
 
+html, body {
+	height: 100%;
+}
+
 body {
 	font-family: 'Dosis', sans-serif;
 	background: url(../img/background.png) fixed;
@@ -83,6 +87,8 @@ label {
 #footer {
 	letter-spacing: 3px;
 	margin-top: 5em;
+	width: 60%;
+	margin: auto;
 }
 
 .mentions-legal {
