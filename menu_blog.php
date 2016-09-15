@@ -19,7 +19,6 @@
 
 	<!-- <h4>Catégories</h4> -->
 	<ul>
-	<li id="border-top-menu"></li>
 		<li><a class="color5" href="#">Qu'est ce que.. ?!</a></li>
 		<li><a class="color1" href="#">HTML/CSS</a></li>
 		<li><a class="color2" href="#">PHP</a></li>
