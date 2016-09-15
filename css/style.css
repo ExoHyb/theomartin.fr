@@ -193,6 +193,40 @@ h3 {
   margin: auto;
 }
 
+.articles-similaire h5 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.border-articles {
+  border-bottom: 1px solid #eee;
+  width: 95%;
+  margin: auto;
+}
+
+.badge-article {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: rgba(141, 242, 255, 0.3);
+  width: 50%;
+  border-radius: 5px;
+  min-height: 8em;
+  margin-bottom: 1em;
+}
+.badge-article .photo-profil {
+  width: 25%;
+  margin-left: 0.5em;
+  float: left;
+  margin-right: 1em;
+}
+.badge-article .prez-text {
+  float: left;
+}
+.badge-article .reseaux-sociaux {
+  width: 10%;
+  float: left;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 1.5em;
@@ -316,8 +350,6 @@ label {
 #footer {
   letter-spacing: 3px;
   margin-top: 5em;
-  width: 60%;
-  margin: auto;
 }
 
 .mentions-legal {
