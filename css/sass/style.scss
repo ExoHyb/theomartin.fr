@@ -6,6 +6,10 @@
 @import "articles";
 @import "media-mobile";
 
+html, body {
+	height: 100%;
+}
+
 body {
 	font-family: 'Dosis', sans-serif;
 	background: url(../img/background.png) fixed;

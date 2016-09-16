@@ -20,6 +20,7 @@ h3 {
   width: 80%;
   background-color: #fff;
   margin-top: 5em;
+  min-height: 100%;
 }
 
 .container-width {
@@ -107,8 +108,11 @@ h3 {
 }
 
 .menu-blog {
+  margin-top: 1em;
   position: fixed;
   text-transform: uppercase;
+  border-right: 1px solid #eee;
+  height: 89%;
 }
 .menu-blog ul {
   list-style: none;
@@ -189,6 +193,113 @@ h3 {
   margin: auto;
 }
 
+.articles-similaire h5 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.border-articles {
+  border-bottom: 1px solid #eee;
+  width: 95%;
+  margin: auto;
+}
+
+.badge-article {
+  float: left;
+  padding-top: 0.3em;
+  padding-bottom: 0.5em;
+  background-color: rgba(141, 242, 255, 0.3);
+  width: 49%;
+  border-radius: 5px;
+  min-height: 11em;
+  margin-bottom: 1em;
+  margin-right: 0.5em;
+}
+.badge-article h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.badge-article .photo-profil {
+  width: 25%;
+  margin-left: 0.5em;
+  float: left;
+  margin-right: 1em;
+}
+.badge-article .prez-text {
+  float: left;
+}
+.badge-article .reseaux-sociaux {
+  width: 10%;
+  float: left;
+}
+
+.part-sociaux {
+  float: left;
+  padding-top: 0.3em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  background-color: rgba(141, 242, 255, 0.2);
+  width: 49%;
+  border-radius: 5px;
+  min-height: 11em;
+  margin-bottom: 1em;
+}
+.part-sociaux h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.part-sociaux .reseaux-sociaux {
+  width: 6%;
+  float: left;
+}
+.part-sociaux .div-star {
+  padding-left: 1em;
+}
+.part-sociaux .div-star i {
+  font-size: 1.3em;
+}
+
+.art-simi {
+  float: left;
+  padding-top: 0.3em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  background-color: rgba(141, 242, 255, 0.2);
+  width: 49%;
+  border-radius: 5px;
+  min-height: 11em;
+  margin-top: -0.5em;
+  margin-bottom: 1em;
+  margin-right: 0.5em;
+}
+.art-simi h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.art-simi ul li {
+  list-style-image: url(../img/fleche.png);
+}
+
+.flashquest {
+  float: left;
+  padding-top: 0.3em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  background-color: rgba(141, 242, 255, 0.3);
+  width: 49%;
+  border-radius: 5px;
+  min-height: 11em;
+  margin-bottom: 1em;
+  margin-top: -0.5em;
+}
+.flashquest h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.flashquest ul li {
+  list-style-image: url(../img/fleche.png);
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 1.5em;
@@ -232,6 +343,10 @@ h3 {
     display: none;
   }
 }
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Dosis', sans-serif;
   background: url(../img/background.png) fixed;
