@@ -20,7 +20,7 @@ class blogManager {
     function getPosts($category=null, $limit=null, $order="DESC"){
         $query = "SELECT * FROM articles";
         if($category){
-            $query .= "WHERE categorie='".$category."'";
+            $query .= " WHERE categorie=".$category;
         }
         $query .= " ORDER BY date_publication ".$order;
         if($limit){
@@ -34,7 +34,7 @@ class blogManager {
         return $result;
     }
 
-    function addPost($title, $content, $date, $category, $image="null"){
+    function addPost($title, $content, $date, $category, $image){
         $query = "INSERT INTO articles (titre, contenu, date_publication, categorie, image)
                     VALUES ('".$title."', '".$content."', '".$date."', '".$category."', '".$image."')";
 
@@ -42,7 +42,7 @@ class blogManager {
         $sth->execute();
     }
 
-    function modPost($id, $title, $content, $category, $image="null"){
+    function modPost($id, $title, $content, $category, $image){
         $query = "UPDATE articles
           SET titre='".$title."', contenu='".$content."', categorie='".$category."', image='".$image."'
           WHERE id=".$id;
@@ -78,7 +78,7 @@ class blogManager {
         $sth->execute();
         $result = $sth->fetch(PDO::FETCH_OBJ);
 
-        return $result->libelle;
+        return (isset($result->libelle)) ? $result->libelle : 'None';
     }
 
     function delCategory($id){
@@ -88,9 +88,10 @@ class blogManager {
     }
 
     function addCategory($name){
-        $query = "INSERT INTO categories (libelle) VALUES ('".$name."')";
+        $name = addslashes($name);
+        $query = "INSERT INTO categories(libelle) VALUES ('$name')";
         $sth = $this->db->prepare($query);
-        $sth->execute();
+        $sth->execute(array($name));
     }
 
     function getExcerpt($id, $link = true){
