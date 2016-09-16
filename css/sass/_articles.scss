@@ -31,10 +31,9 @@
 
 .badge-article {
 	float: left;
-	padding-top: 0.3em;
-	padding-bottom: 0.5em;
+	padding: 0.3em 1em 0.5em 1em;
 	background-color: rgba(141, 242, 255, 0.3);
-	width: 49%;
+	width: 49.6%;
 	border-radius: 5px;
 	min-height: 11em;
 	margin-bottom: 1em;
@@ -60,11 +59,9 @@
 
 .part-sociaux {
 	float: left;
-	padding-top: 0.3em;
-	padding-bottom: 0.5em;
-	padding-left: 1em;
+	padding: 0.3em 1em 0.5em 1em;
 	background-color: rgba(141, 242, 255, 0.2);
-	width: 49%;
+	width: 49.6%;
 	border-radius: 5px;
 	min-height: 11em;
 	margin-bottom: 1em;
@@ -86,11 +83,9 @@
 
 .art-simi {
 	float: left;
-	padding-top: 0.3em;
-	padding-bottom: 0.5em;
-	padding-left: 1em;
+	padding: 0.3em 1em 0.5em 1em;
 	background-color: rgba(141, 242, 255, 0.2);
-	width: 49%;
+	width: 49.6%;
 	border-radius: 5px;
 	min-height: 11em;
 	margin-top: -0.5em;
@@ -109,11 +104,9 @@
 
 .flashquest {
 	float: left;
-	padding-top: 0.3em;
-	padding-bottom: 0.5em;
-	padding-left: 1em;
+	padding: 0.3em 1em 0.5em 1em;
 	background-color: rgba(141, 242, 255, 0.3);
-	width: 49%;
+	width: 49.6%;
 	border-radius: 5px;
 	min-height: 11em;
 	margin-bottom: 1em;
@@ -126,5 +119,17 @@
 		li {
 			list-style-image : url(../img/fleche.png);
 		}
+	}
+}
+
+.commentaires {
+	background-color: rgba(141, 242, 255, 0.2);
+	border-radius: 5px;
+	min-height: 11em;
+	padding: 0.3em 1em 0.5em 1em;
+	margin-top: -0.5em;
+	h5 {
+		font-weight: bold;
+		text-transform: uppercase;
 	}
 }

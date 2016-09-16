@@ -108,58 +108,12 @@ include("header.php");
 </div>
 <div class="clearfix"></div>
 
-<!-- ARTICLE SIMILAIRE -->
 
-<!-- <div class="border-articles"></div> -->
-
-<!-- <div class="row">
-	<div class="col-md-12">
-		<h3>Articles similaire</h3>
-	</div>
-</div> -->
-
-<!-- <div class="articles-similaire">
-	<div class="row">
-		<div class="col-md-3">
-				<img class="img-responsive img-article" src="img/front-end-vs-back-end.jpg" alt="">
-				<h5>Titre de l'article</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing... <a href="#">[Lire la suite]</a></p>
-		</div>
-		<div class="col-md-3">
-			<img class="img-responsive img-article" src="img/front-end-vs-back-end.jpg" alt="">
-			<h5>Titre de l'article</h5>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing... <a href="#">[Lire la suite]</a></p>
-		</div>
-		<div class="col-md-3">
-			<img class="img-responsive img-article" src="img/front-end-vs-back-end.jpg" alt="">
-			<h5>Titre de l'article</h5>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing... <a href="#">[Lire la suite]</a></p>
-		</div>
-		<div class="col-md-3">
-			<img class="img-responsive img-article" src="img/front-end-vs-back-end.jpg" alt="">
-			<h5>Titre de l'article</h5>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing... <a href="#">[Lire la suite]</a></p>
-		</div>
-	</div>
-</div> -->
-
-<!-- LAISSEZ UN COMMENTAIRES -->
-<div class="border-articles"></div>
-
-<div class="row">
-	<div class="col-md-12">
-
-		<h3>Commentaires</h3>
-
-		<p>Vous êtes connecter en tant que <span>Inconu</span> / Vous devez être connecter pour déposer un commentaire</p>
-
-		<textarea class="form-control" rows="3" placeholder="Ecrivez votre commentaire ici..."></textarea>
-
-		<button type="button" id="button-commentaire" class="btn btn-success">Envoyez</button>
-
-		<div class="clearfix"></div>
-
-	</div>
+<div class="commentaires">
+	<h5>Commentaires</h5>
+	<textarea class="form-control" rows="3" placeholder="Ecrivez votre commentaire ici..."></textarea>
+	<button type="button" id="button-commentaire" class="btn btn-success">Envoyez</button>
+	<div class="clearfix"></div>
 </div>
 
 <!-- LES COMMENTAIRES DEPOSER -->
