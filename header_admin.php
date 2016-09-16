@@ -307,7 +307,3 @@ desired effect
     <!-- /.sidebar -->
   </aside>
   <div class="content-wrapper">
-
-<?php
-$em->printEvents();
-?>

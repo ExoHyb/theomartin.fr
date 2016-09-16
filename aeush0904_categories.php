@@ -7,22 +7,16 @@ require_once("class/blogManager.php");
 
 $bm = new blogManager();
 
-if(isset($_GET['a'])){
-    if($_GET['a'] == 'suppr') {
-        if (isset($_GET['id'])) {
-            $bm->delCategory($_GET['id']);
-        }
-    }
-    if($_GET['a'] == 'ajouter'){
-        $bm->addCategory($_GET['nom']);
-    }
-
+if(isset($_POST['nom'])){
+    $bm->addCategory($_POST['nom']);
+    $em->addEvent('Succès !', 'La catégorie a bien été ajoutée.');
 }
 
 $cat = $bm->getCategory();
 
 include("header_admin.php");
 ?>
+
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
@@ -37,10 +31,13 @@ include("header_admin.php");
 
     <!-- Main content -->
     <section class="content">
-
+        <?php
+        $em->printEvents();
+        ?>
       <!-- Your Page Content Here -->
       
         <div class="row">
+
           <div class="col-md-6">
             <div class="box box-info">
             <div class="box-header with-border">
@@ -48,7 +45,9 @@ include("header_admin.php");
             </div>
             <!-- /.box-header -->
             <!-- form start -->
+
             <div class="box-body table-responsive no-padding">
+
               <table class="table table-hover">
                 <tr>
                   <th>Nom de la catégorie</th>
@@ -58,7 +57,7 @@ include("header_admin.php");
                     <tr>
                         <td><?php echo $c->libelle;?></td>
                         <td>
-                            <a class="btn btn-warning"><i class="fa fa-pencil"></i></a>
+                            <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#modif"><i class="fa fa-pencil"></i></button>
                             <a href="aeush0904_categories.php?a=suppr&id=<?php echo $c->id?>" class="btn btn-danger"><i class="fa fa-close"></i></a>
                         </td>
                     </tr>
@@ -76,8 +75,7 @@ include("header_admin.php");
                 <h3 class="box-title">Créer une catégorie</h3>
               </div>
               <div class="box-body">
-                <form action="aeush0904_categories.php" METHOD="get">
-                    <input type="hidden" name="a" value="ajouter"/>
+                <form action="aeush0904_categories.php" method="post">
                   <div class="form-group">
                     <label for="">Nom de la catégorie</label>
                     <input type="text" name="nom" class="form-control">

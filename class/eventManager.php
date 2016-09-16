@@ -14,10 +14,19 @@ class eventManager {
      * @param string $title: title of the event
      * @param string $text: text of the event
      * @param string $type: type of the event (success, warning, danger)
+     *
+     * @return array: return the added event
      */
 
-    function addEvent($title, $text, $type="success"){
-        $this->events[$type][] = [$title, $text];
+    function addEvent($title, $text, $type="success", $links = false){
+        $this->events[$type][] = [$title, $text, $links];
+    }
+
+
+    function dumpEvents(){
+        echo '<pre>';
+        print_r($this->events);
+        echo '</pre>';
     }
 
 
@@ -33,7 +42,17 @@ class eventManager {
                 <div class="alert alert-success alert-dismissible">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
                     <h4><i class="icon fa fa-ban"></i> <?php echo $event[0]; ?></h4>
-                    <?php echo $event[1]; ?>
+                    <?php
+                    echo $event[1];
+                    if($event[2]){
+                        echo '<div class="pull-right">';
+                        foreach($event[2] as $link){
+                            echo $link;
+                            echo '&nbsp;';
+                        }
+                        echo '</div><br/>';
+                    }
+                    ?>
                 </div>
             <?php
             }
@@ -42,10 +61,19 @@ class eventManager {
         if (!empty($this->events['warning']) && $type == 'warning' || $type == 'all') {
             foreach ($this->events['warning'] as $event) {
                 ?>
-                <div class="alert alert-warning alert-dismissible">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <div class="alert alert-warning">
                     <h4><i class="icon fa fa-ban"></i> <?php echo $event[0]; ?></h4>
-                    <?php echo $event[1]; ?>
+                    <?php
+                    echo $event[1];
+                    if($event[2]){
+                        echo '<div class="pull-right">';
+                        foreach($event[2] as $link){
+                            echo $link;
+                            echo '&nbsp;';
+                        }
+                        echo '</div><br/><br/>';
+                    }
+                    ?>
                 </div>
             <?php
             }
@@ -54,10 +82,19 @@ class eventManager {
         if (!empty($this->events['danger']) && $type == 'danger' || $type == 'all') {
             foreach ($this->events['danger'] as $event) {
                 ?>
-                <div class="alert alert-danger alert-dismissible">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <div class="alert alert-danger">
                     <h4><i class="icon fa fa-ban"></i> <?php echo $event[0]; ?></h4>
-                    <?php echo $event[1]; ?>
+                    <?php
+                    echo $event[1];
+                    if($event[2]){
+                        echo '<div class="pull-right">';
+                        foreach($event[2] as $link){
+                            echo $link;
+                            echo '&nbsp;';
+                        }
+                        echo '</div><br/><br/>';
+                    }
+                    ?>
                 </div>
             <?php
             }
