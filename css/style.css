@@ -248,6 +248,16 @@ h3 {
   font-weight: bold;
   text-transform: uppercase;
 }
+.part-sociaux .reseaux-sociaux {
+  width: 6%;
+  float: left;
+}
+.part-sociaux .div-star {
+  padding-left: 1em;
+}
+.part-sociaux .div-star i {
+  font-size: 1.3em;
+}
 
 .art-simi {
   float: left;

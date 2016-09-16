@@ -59,19 +59,30 @@ include("header.php");
 		<a href="#">
 			<img class="img-responsive reseaux-sociaux" src="img/twitter.png" alt="logo Twitter">
 		</a>
+		<a href="#">
+			<img class="img-responsive reseaux-sociaux" src="img/linkedin.png" alt="Logo Linkedin">
+		</a>
+		<a href="#">
+			<img class="img-responsive reseaux-sociaux" src="img/pinterest.png" alt="Logo Pinterest">
+		</a>
 	</div>
 	<div class="clearfix"></div>
 </div>
 
 <div class="part-sociaux">
+	<h5>Note de l'article</h5>
+	<div class="div-star">
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+	</div>
 	<h5>Partagez cet article</h5>
-	<ul>
-		<li><a href="#">APIM Policy to convert and incoming GET request...</a></li>
-		<li><a href="#">Getting running an example for node-webgl</a></li>
-		<li><a href="#">Fatal signal 11(SISSEGV) caused by google...</a></li>
-		<li><a href="#">Angular Directive Link Function Add Items To...</a></li>
-		<li><a href="#">APIM Policy to convert and incoming GET request...</a></li>
-	</ul>
+	<a href="#"><img class="img-responsive reseaux-sociaux" src="img/facebook.png" alt="Logo Facebook"></a>
+	<a href="#"><img class="img-responsive reseaux-sociaux" src="img/twitter.png" alt="Logo Twitter"></a>
+	<a href="#"><img class="img-responsive reseaux-sociaux" src="img/linkedin.png" alt="Logo Linkedin"></a>
+	<div class="clearfix"></div>
 </div>
 
 <div class="art-simi">
