@@ -20,6 +20,7 @@ if(!empty($_POST)){
         $error .= '- Veuillez entrer un contenu à votre message.<br/>';
     }
 
+
     if($error == ''){
         $to      = 'theomartin.ste@gmail.com';
         $subject = $_POST['sujet'];
@@ -27,7 +28,7 @@ if(!empty($_POST)){
         $message = wordwrap($message, 70, "\r\n");;
         $headers = 'From: '.$_POST['expediteur'] . "\r\n";
 
-        mail($to, $subject, $message, $headers);
+        //mail($to, $subject, $message, $headers);
     }
 }
 ?>
@@ -40,10 +41,10 @@ if(!empty($_POST)){
 
                       <?php
                       if(isset($error) && $error != ''){
-                          echo $error;
+                          echo '<p>'.$error.'</p>';
                       }
                       if(isset($error) && $error == ''){
-                          echo '<p>Votre message a été envoyé avec succès.';
+                          echo '<p>Votre message a été envoyé avec succès.</p>';
                       }
                       ?>
                         <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>#contact">
