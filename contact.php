@@ -34,7 +34,7 @@ if(!empty($_POST)){
 
 <!-- CONTACT -->
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" id="contact">
                 <h3 class="text-center">Contact</h3>
                   <div class="style-form">
                       <?php
@@ -42,7 +42,7 @@ if(!empty($_POST)){
                           echo $error;
                       }
                       ?>
-                        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>#contact">
                           <div class="form-group">
                             <label for="nom">Nom <span id="asterix-red">*</span></label>
                             <input type="text" class="form-control" id="nom" name="nom">
