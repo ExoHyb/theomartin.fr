@@ -19,7 +19,7 @@ include("header.php");
                                 <img class="img-responsive" src="img/front-end-vs-back-end.jpg" alt="">
                             </div>
                             <div class="col-md-9">
-                                <h3><a href="template_article.php&id=<?php echo $post->id; ?>"><?php echo $post->titre; ?></a></h3>
+                                <h3><a href="template_article.php?id=<?php echo $post->id; ?>"><?php echo $post->titre; ?></a></h3>
                                 <?php echo $bm->getExcerpt($post->id); ?>
                             </div>
                         </div>
