@@ -29,18 +29,6 @@ include("header.php");
 			</div>
 		</div>
 
-		<!-- RESEAUX SOCIAUX -->
-
-<!-- 		<div class="row">
-	<div class="col-md-12">
-		
-		<h3>Partagez cet article</h3>
-
-		<a href="#"><img src="img/twitter.png" alt=""></a>
-		<a href="#"><img src="img/facebook.png" alt=""></a>
-
-	</div>
-</div> -->
 
 
 <div class="badge-article">

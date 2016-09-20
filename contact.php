@@ -37,6 +37,7 @@ if(!empty($_POST)){
             <div class="col-md-12" id="contact">
                 <h3 class="text-center">Contact</h3>
                   <div class="style-form">
+
                       <?php
                       if(isset($error) && $error != ''){
                           echo $error;
@@ -67,7 +68,7 @@ if(!empty($_POST)){
                             <textarea class="form-control" rows="3" name="message"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-default">Submit</button>
+                        <button type="submit" class="btn btn-success">Envoyez</button>
                     </form>
                 </div>
             </div>
