@@ -17,7 +17,7 @@ h3 {
 }
 
 .container {
-  width: 80%;
+  /* 	width: 80%; */
   background-color: #fff;
   margin-top: 5em;
   min-height: 100%;
@@ -412,7 +412,7 @@ html, body {
 
 body {
   font-family: 'Dosis', sans-serif;
-  font-size: 1em;
+  font-size: 1.3em;
   background: url(../img/background.png) fixed;
   background-size: 100% 100%;
   background-repeat: no-repeat;
