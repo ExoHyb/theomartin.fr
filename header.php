@@ -1,3 +1,15 @@
+<?php
+$url = explode('/', $_SERVER['SCRIPT_FILENAME']);
+
+if($url[4] == 'index.php'){
+    $page = 'portfolio';
+}
+else{
+    $page = 'blog';
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -34,8 +46,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.php">Portfolio <span class="sr-only">(current)</span></a></li>
-        <li><a href="template_blog.php">Blog</a></li>
+        <li <?php echo ($page == 'portfolio') ? 'class ="active"' : ''; ?>><a href="index.php">Portfolio </a></li>
+        <li <?php echo ($page == 'blog') ? 'class ="active"' : ''; ?>><a href="template_blog.php">Blog </a></li>
       </ul>
 
       <form class="navbar-form navbar-right">
