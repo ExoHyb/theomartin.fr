@@ -41,6 +41,9 @@ if(!empty($_POST)){
                       if(isset($error) && $error != ''){
                           echo $error;
                       }
+                      if(isset($error) && $error == ''){
+                          echo '<p>Votre message a été envoyé avec succès.';
+                      }
                       ?>
                         <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>#contact">
                           <div class="form-group">
