@@ -104,29 +104,6 @@ include("header.php");
 	<div class="clearfix"></div>
 </div>
 
-<div class="mini-badge">
-	<img class="img-responsive photo-profil" src="img/profil4.png" alt="Photo de profil">
-	<div class="prez-text">
-		<h5>Jacquie</h5>
-		<p>Dévelopeuse Back-End</p>
-	</div>
-	<div class="clearfix"></div>
-</div>
-
-<div class="reponse">
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, eum, culpa? Officia quas voluptatem distinctio debitis molestias odit cumque, perferendis facilis eligendi quod dolores magni non itaque, ad dignissimos deserunt.</p>
-</div>
-
-
-<div class="mini-badge">
-	<img class="img-responsive photo-profil" src="img/profil8.png" alt="Photo de profil">
-	<div class="prez-text">
-		<h5>Michel</h5>
-		<p>Spécialiste Python</p>
-	</div>
-	<div class="clearfix"></div>
-</div>
-
 <!-- LES COMMENTAIRES DEPOSER -->
 
 <div class="titre-commentaire">
